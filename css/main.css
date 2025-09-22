@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.test {
+  box-sizing: content-box;
+  background-color: red;
+  padding: 10px;
+  width: 100px;
+}
+.test h1 {
+  color: #0d598b;
+}
+
+.test2 {
+  box-sizing: border-box;
+  background-color: blue;
+  padding: 10px;
+  width: 100px;
+}
+
+header ul li:nth-child(even) {
+  /* pair */
+  background-color: pink;
+}
+
+header ul li:nth-child(odd) {
+  /* impair */
+  background-color: purple;
+}
+
+header ul li:nth-child(odd) a {
+  color: var(--color-primary);
+}
+
+header ul li:nth-child(odd) a::before {
+  content: "a";
+  color: red;
+}
+
+header ul li:nth-child(odd) a::after {
+  content: "b";
+  color: green;
+}
+
+input[type=email] {
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 4px;
+  border-color: gray;
+}
+
+input[type=email]:valid {
+  border-color: green;
+}
+
+input[type=email]:invalid {
+  border-color: red;
+}
+
+section h1 {
+  color: blue;
+  transition: all 2s ease;
+}
+
+section h1:hover {
+  color: red;
+  /* transform: scale(1.2); */
+  transform: translateX(100px);
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */
