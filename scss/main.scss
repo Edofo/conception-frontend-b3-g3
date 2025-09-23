@@ -78,3 +78,31 @@ section h1:hover {
   transform: translateX(100px);
   font-size: 40px;
 }
+
+@media (min-width: 1024px) {
+  .btn-search {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-search {
+    background-color: red;
+  }
+}
+
+footer {
+  background-color: green;
+  width: 90vw;
+}
+
+footer p {
+  width: 90%;
+  background-color: blue;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: black;
+  }
+}

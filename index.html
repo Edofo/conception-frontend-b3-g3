@@ -12,6 +12,12 @@
     <meta property="og:image" content="deezer" />
 
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #ea321a;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -39,15 +45,15 @@
       <div class="test"><h1>aaaa</h1></div>
       <div class="test2"><p>aaaa</p></div>
       <section>
-        <h1>TITRE</h1>
-        <h2>Sous-titre</h2>
+        <h1 class="text-3xl font-bold underline bg-red-500">TITRE</h1>
+        <h2 class="text-clifford">Sous-titre</h2>
         <h3>Sous-titre</h3>
         <h4>Sous-titre</h4>
       </section>
       <section>
         <input type="search" placeholder="search...." />
         <input type="email" placeholder="search...." />
-        <button>rechercher</button>
+        <button class="btn-search">rechercher</button>
       </section>
     </main>
     <footer>
