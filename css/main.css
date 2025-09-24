@@ -49,18 +49,18 @@ header ul li:nth-child(odd) a::after {
   color: green;
 }
 
-input[type=email] {
+input[type="email"] {
   border-width: 1px;
   border-radius: 4px;
   padding: 4px;
   border-color: gray;
 }
 
-input[type=email]:valid {
+input[type="email"]:valid {
   border-color: green;
 }
 
-input[type=email]:invalid {
+input[type="email"]:invalid {
   border-color: red;
 }
 
